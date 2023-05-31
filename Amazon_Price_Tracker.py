@@ -42,10 +42,10 @@ if ProductPriceStrip<buyprice:
     message=f"{ProductTitleStrip}is now {ProductPriceStrip}"
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
-        result = connection.login("diya.basu73@gmail.com", "jlimoeybkwydrepx")
+        result = connection.login("YOUR_EMAIL", "YOUR_PASSWORD")
         connection.sendmail(
-            from_addr="diya.basu73@gmail.com",
-            to_addrs="diya.basu73@gmail.com",
+            from_addr="FROM_EMAIL",
+            to_addrs="TO_EMAIL",
             msg=f"Subject:Amazon Price Alert!\n\n{message}\n{url}".encode("utf-8")
         )
 
