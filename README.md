@@ -6,4 +6,11 @@ More often than not, prices of items vary on Amazon based on a variety of factor
 
 This project developed on python aims to derive data from Amazon website of the product that the user wants to track the price of. It utilises the smtp module in python to send emails to the user when the price of the item falls below the limit set by the user. 
 
+# Working: 
+To run the following code: 
+Copy the following piece of code to install neccessary dependencies: 
+```
+pip install html smtplib bs4 requests
+```
+
 **Conclusion:** the project develops an integrated full stack system with a back end running on python and front-end running on email softwares and the Amazon Website. This is an extremely useful tool for users who never want to miss out on a great deal. 
